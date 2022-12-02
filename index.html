@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="./javascript/codigo.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row pantalla">
+            <div class="col">
+                <input type="text" class="pantalla" id="pantalla">
+            </div>
+            <div class="col">
+                <input type="text" class="resultado" id="resultado" readonly>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="nueve()" class="numero">9</button>
+                <button onclick="ocho()" class="numero">8</button>
+                <button onclick="siete()" class="numero">7</button>
+            </div>
+            
+            <div class="col">
+                <button onclick="seis()" class="numero">6</button>
+                <button onclick="cinco()" class="numero">5</button>
+                <button onclick="cuatro()" class="numero">4</button>
+                
+            </div>
+            <div class="col">
+                <button onclick="tres()" class="numero">3</button>
+                <button onclick="dos()" class="numero">2</button>
+                <button onclick="uno()" class="numero">1</button>
+            </div>
+            <div class="col">
+                <button onclick="punto()" class="numero">.</button>
+                <button onclick="cero()" class="numero">0</button>
+                <button onclick="dobleCero()" class="numero">00</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="borrar()" class="operacion">DEL</button>
+            </div>
+            <div class="col">
+                <button onclick="dividir()" class="operacion">/</button>
+            </div>
+            <div class="col">
+                <button onclick="multiplicar()" class="operacion">X</button>
+            </div>
+            <div class="col">
+                <button onclick="restar()" class="operacion">-</button>
+            </div>
+            <div class="col">
+                <button onclick="sumar()" class="operacion">+</button>
+            </div>
+            <div class="col">
+                <button onclick="igual()" class="operacion">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
